@@ -20,7 +20,7 @@ namespace TeamWork
             Console.Title = "Falling Rocks";
             Console.BufferHeight = Console.WindowHeight;
             Console.BufferWidth = Console.WindowWidth = 50;
-            InitialisationOfTheGame.scores = 0;        
+            scores = 0;        
         }
 
         public static void Sleep()
