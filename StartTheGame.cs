@@ -8,8 +8,6 @@ namespace TeamWork
     {     
         static Random rand = new Random();
         static List<Letters> letters;
-        //public static long scores;
-        //public static int livesCount = 3;
         static void Main()
         {
             InitialisationOfTheGame.Initialisation();
