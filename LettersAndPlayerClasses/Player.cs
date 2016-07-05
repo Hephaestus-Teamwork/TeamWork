@@ -10,7 +10,7 @@ namespace TeamWork
     public class Player
     {
         private static Player instance = null;
-
+        StructureForPlayer player = new StructureForPlayer("(0)", InitialisationOfTheGame.playGroundWidth / 2 - 1);
 
         private Player()
         {
