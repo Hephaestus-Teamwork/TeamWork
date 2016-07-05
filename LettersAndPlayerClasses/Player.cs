@@ -26,29 +26,29 @@ namespace TeamWork
         }
         public void MoveLeft()
         {
-            if (x > 0)
+            if (this.player.X > 0)
             {
-                x--;
+                this.player.X--;
             }
         }
         public void MoveRight()
         {
-            if (x < InitialisationOfTheGame.playGroundWidth - 2)
+            if (this.player.X < InitialisationOfTheGame.playGroundWidth - 2)
             {
-                x++;
+                this.player.X++;
             }
         }
         public void Print(bool hit = false)
         {
-            Console.SetCursorPosition(x, Console.WindowHeight - 1);
+            Console.SetCursorPosition(this.player.X, Console.WindowHeight - 1);
             Console.ForegroundColor = hit ? ConsoleColor.Red : ConsoleColor.White;
-            Console.Write(hit ? "XXX" : body);
+            Console.Write(hit ? "XXX" : this.player.Body);
         }
         public bool Overlap(Letters r)
         {
             if (Console.WindowHeight - 1 == r.Y)
             {
-                if (x == r.X || x + 1 == r.X || x + 2 == r.X)
+                if (this.player.X == r.X || this.player.X + 1 == r.X || this.player.X + 2 == r.X)
                 {
                     return true;
                 }
