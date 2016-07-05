@@ -5,10 +5,9 @@ using System.Threading;
 namespace TeamWork
 {
     public class Game
-    {     
+    {
         static Random rand = new Random();
         static List<Letters> letters;
-        
         static void Main()
         {
             InitialisationOfTheGame.Initialisation();
@@ -54,28 +53,31 @@ namespace TeamWork
                         InitialisationOfTheGame.livesCount--;
                         hit = true;
 
-                        {  //TODO: move this somewhere
-                            Console.Beep();
-                            Console.Clear();
-                            Console.BackgroundColor = ConsoleColor.Red;
-                            Thread.Sleep(100);
-                            Console.Clear();
-                            Console.BackgroundColor = ConsoleColor.Black;
-                            Thread.Sleep(100);
-                            Console.Clear();
-                            Console.BackgroundColor = ConsoleColor.Red;
-                            Thread.Sleep(100);
-                            Console.Clear();
-                            Console.BackgroundColor = ConsoleColor.Black;
-                            Thread.Sleep(100);
-                            Console.Clear();
-                            Console.BackgroundColor = ConsoleColor.Red;
-                            Thread.Sleep(100);
-                            Console.Clear();
-                            Console.BackgroundColor = ConsoleColor.Black;
-                            Thread.Sleep(100);
-                            Console.Clear();
-                        }
+
+                        //TODO: move this somewhere
+                        Console.Beep();
+                        Console.Clear();
+                        Console.BackgroundColor = ConsoleColor.Red;
+                        Thread.Sleep(100);
+                        Console.Clear();
+                        Console.BackgroundColor = ConsoleColor.Black;
+                        Thread.Sleep(100);
+                        Console.Clear();
+                        Console.BackgroundColor = ConsoleColor.Red;
+                        Thread.Sleep(100);
+                        Console.Clear();
+                        Console.BackgroundColor = ConsoleColor.Black;
+                        Thread.Sleep(100);
+                        Console.Clear();
+                        Console.BackgroundColor = ConsoleColor.Red;
+                        Thread.Sleep(100);
+                        Console.Clear();
+                        Console.BackgroundColor = ConsoleColor.Black;
+                        Thread.Sleep(100);
+                        Console.Clear();
+                        Console.Beep();
+
+
                         if (InitialisationOfTheGame.livesCount == 0) // game over
                         {
                             Console.ForegroundColor = ConsoleColor.Red;

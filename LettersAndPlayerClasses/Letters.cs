@@ -8,7 +8,6 @@ namespace TeamWork
 {
     public class Letters
     {
-        public static int playGroundWidth = 30;
         private int x;
         private int y;
         private ConsoleColor colour;
@@ -67,7 +66,7 @@ namespace TeamWork
         {
             Array values = Enum.GetValues(typeof(EnumerationOfCharacters));
             randomEnumeration = (EnumerationOfCharacters)values.GetValue(rand.Next(values.Length));
-            X = rand.Next(playGroundWidth);
+            X = rand.Next(InitialisationOfTheGame.playGroundWidth);
             Y = 0;
             Colour = GetRandomConsoleColor();
         }

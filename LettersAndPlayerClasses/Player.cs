@@ -8,7 +8,6 @@ namespace TeamWork
 {
     public class Player
     {
-        public static int playGroundWidth = 30;
         private static Player instance = null;
         private string body;
         private int x; // position of '('
@@ -16,7 +15,7 @@ namespace TeamWork
         private Player()
         {
             body = "(0)";
-            x = playGroundWidth / 2 - 1;
+            x = InitialisationOfTheGame.playGroundWidth / 2 - 1;
             Print();
         }
         public static Player GetInstance()
@@ -36,7 +35,7 @@ namespace TeamWork
         }
         public void MoveRight()
         {
-            if (x < playGroundWidth - 2)
+            if (x < InitialisationOfTheGame.playGroundWidth - 2)
             {
                 x++;
             }
