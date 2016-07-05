@@ -48,7 +48,7 @@ namespace TeamWork
         {
             if (Console.WindowHeight - 1 == r.Y)
             {
-                if (this.player.X == r.X || this.player.X + 1 == r.X || this.player.X + 2 == r.X)
+                if (this.player.X == r.X || this.player.X + 1 == r.X || this.player.X + 1 == r.X)
                 {
                     return true;
                 }
