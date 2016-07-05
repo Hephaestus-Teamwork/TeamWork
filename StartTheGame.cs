@@ -52,7 +52,7 @@ namespace TeamWork
                     {
                         InitialisationOfTheGame.livesCount--;
                         hit = true;
-                        
+
                         //TODO: move this somewhere
                         Console.Beep();
                         Console.Clear();
@@ -74,14 +74,22 @@ namespace TeamWork
                         Console.BackgroundColor = ConsoleColor.Black;
                         Thread.Sleep(100);
                         Console.Clear();
-                        Console.Beep();
 
 
                         if (InitialisationOfTheGame.livesCount == 0) // game over
                         {
+                            Console.SetCursorPosition(14, 8);
                             Console.ForegroundColor = ConsoleColor.Red;
-                            Console.Out.WriteLine("GAME OVER !!!");
+                            Console.WriteLine("GAME OVER!!!");
+
+                            Console.SetCursorPosition(17, 10);
+                            Console.Out.WriteLine(((char)3).ToString() + " " + ((char)3).ToString() + " " + ((char)3).ToString());
+
+                            Console.SetCursorPosition(12, 12);
+                            Console.Out.WriteLine("Your score is {0}", InitialisationOfTheGame.scores);
+
                             Console.ForegroundColor = ConsoleColor.White;
+                            Console.SetCursorPosition(0, Console.WindowHeight - 1);
                             Environment.Exit(0);
                         }
                     }
