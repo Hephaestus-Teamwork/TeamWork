@@ -10,13 +10,10 @@ namespace TeamWork
     public class Player
     {
         private static Player instance = null;
-        private string body;
-        private int x; // position of '('
+
 
         private Player()
         {
-            body = "(0)";
-            x = InitialisationOfTheGame.playGroundWidth / 2 - 1;
             Print();
         }
         public static Player GetInstance()
