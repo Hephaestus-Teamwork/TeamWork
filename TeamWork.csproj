@@ -48,6 +48,7 @@
     <Compile Include="LettersAndPlayerClasses\Letters.cs" />
     <Compile Include="StartTheGame.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structure\StructureForPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
