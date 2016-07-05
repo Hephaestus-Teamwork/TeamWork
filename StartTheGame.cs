@@ -52,8 +52,7 @@ namespace TeamWork
                     {
                         InitialisationOfTheGame.livesCount--;
                         hit = true;
-
-
+                        
                         //TODO: move this somewhere
                         Console.Beep();
                         Console.Clear();
