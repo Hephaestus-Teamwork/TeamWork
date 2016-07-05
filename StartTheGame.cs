@@ -53,7 +53,29 @@ namespace TeamWork
                     {
                         InitialisationOfTheGame.livesCount--;
                         hit = true;
-                        Console.Beep();
+
+                        {  //TODO: move this somewhere
+                            Console.Beep();
+                            Console.Clear();
+                            Console.BackgroundColor = ConsoleColor.Red;
+                            Thread.Sleep(100);
+                            Console.Clear();
+                            Console.BackgroundColor = ConsoleColor.Black;
+                            Thread.Sleep(100);
+                            Console.Clear();
+                            Console.BackgroundColor = ConsoleColor.Red;
+                            Thread.Sleep(100);
+                            Console.Clear();
+                            Console.BackgroundColor = ConsoleColor.Black;
+                            Thread.Sleep(100);
+                            Console.Clear();
+                            Console.BackgroundColor = ConsoleColor.Red;
+                            Thread.Sleep(100);
+                            Console.Clear();
+                            Console.BackgroundColor = ConsoleColor.Black;
+                            Thread.Sleep(100);
+                            Console.Clear();
+                        }
                         if (InitialisationOfTheGame.livesCount == 0) // game over
                         {
                             Console.ForegroundColor = ConsoleColor.Red;
