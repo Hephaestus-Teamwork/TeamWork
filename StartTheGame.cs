@@ -76,17 +76,17 @@ namespace TeamWork
                         Console.Clear();
 
 
-                        if (InitialisationOfTheGame.livesCount == 0) // game over
+                        if (InitialisationOfTheGame.livesCount == 0) // game over 
                         {
                             Console.SetCursorPosition(14, 8);
                             Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine("GAME OVER!!!");
+                            Console.WriteLine("GAME OVER!!!");   
 
                             Console.SetCursorPosition(17, 10);
-                            Console.Out.WriteLine(((char)3).ToString() + " " + ((char)3).ToString() + " " + ((char)3).ToString());
+                            Console.Out.WriteLine(((char)3).ToString() + " " + ((char)3).ToString() + " " + ((char)3).ToString()); //Three hearts
 
                             Console.SetCursorPosition(12, 12);
-                            Console.Out.WriteLine("Your score is {0}", InitialisationOfTheGame.scores);
+                            Console.Out.WriteLine("Your score is {0} ", InitialisationOfTheGame.scores); //Result
 
                             Console.ForegroundColor = ConsoleColor.White;
                             Console.SetCursorPosition(0, Console.WindowHeight - 1);
@@ -94,6 +94,7 @@ namespace TeamWork
                         }
                     }
                 }
+
                 Console.Clear();
                 foreach (Letters old in removeObsoletes) // removing letters, which are to leave the screen
                 {
