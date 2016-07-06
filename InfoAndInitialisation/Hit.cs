@@ -35,7 +35,7 @@ namespace TeamWork.InfoAndInitialisation
             Console.Clear();
         }
 
-        public bool Questions()
+        public static bool Questions()
         {
             int ntrue = 0;//number of true answer
 
@@ -101,10 +101,12 @@ namespace TeamWork.InfoAndInitialisation
             if (ntrue > 1)
             {
                 Console.WriteLine("You pass !");
+                Console.ReadKey();
                 return true;
             }
 
             Console.WriteLine("You failed !");
+            Console.ReadKey();
             return false;
         }
     }

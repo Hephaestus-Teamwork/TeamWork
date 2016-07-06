@@ -51,25 +51,29 @@ namespace TeamWork
                     }
                     if (player.Overlap(letter)) // if hit
                     {
-                        InitialisationOfTheGame.livesCount--;
                         hit = true;
-                        Hit.FlashScreen();
-                        
-                        if (InitialisationOfTheGame.livesCount == 0) // game over 
+
+                        if (!Hit.Questions())
                         {
-                            Console.SetCursorPosition(14, 8);
-                            Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine("GAME OVER!!!");   
+                            InitialisationOfTheGame.livesCount--;
+                            Hit.FlashScreen();
 
-                            Console.SetCursorPosition(17, 10);
-                            Console.Out.WriteLine(((char)3).ToString() + " " + ((char)3).ToString() + " " + ((char)3).ToString()); //Three hearts
+                            if (InitialisationOfTheGame.livesCount == 0) // game over 
+                            {
+                                Console.SetCursorPosition(14, 8);
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("GAME OVER!!!");
 
-                            Console.SetCursorPosition(12, 12);
-                            Console.Out.WriteLine("Your score is {0} ", InitialisationOfTheGame.scores); //Result
+                                Console.SetCursorPosition(17, 10);
+                                Console.Out.WriteLine(((char)3).ToString() + " " + ((char)3).ToString() + " " + ((char)3).ToString()); //Three hearts
 
-                            Console.ForegroundColor = ConsoleColor.White;
-                            Console.SetCursorPosition(0, Console.WindowHeight - 1);
-                            Environment.Exit(0);
+                                Console.SetCursorPosition(12, 12);
+                                Console.Out.WriteLine("Your score is {0} ", InitialisationOfTheGame.scores); //Result
+
+                                Console.ForegroundColor = ConsoleColor.White;
+                                Console.SetCursorPosition(0, Console.WindowHeight - 1);
+                                Environment.Exit(0);
+                            }
                         }
                     }
                 }
