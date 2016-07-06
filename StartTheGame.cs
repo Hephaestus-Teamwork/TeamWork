@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading;
+using TeamWork.InfoAndInitialisation;
 
 namespace TeamWork
 {
@@ -52,30 +53,8 @@ namespace TeamWork
                     {
                         InitialisationOfTheGame.livesCount--;
                         hit = true;
-
-                        //TODO: move this somewhere
-                        Console.Beep();
-                        Console.Clear();
-                        Console.BackgroundColor = ConsoleColor.Red;
-                        Thread.Sleep(100);
-                        Console.Clear();
-                        Console.BackgroundColor = ConsoleColor.Black;
-                        Thread.Sleep(100);
-                        Console.Clear();
-                        Console.BackgroundColor = ConsoleColor.Red;
-                        Thread.Sleep(100);
-                        Console.Clear();
-                        Console.BackgroundColor = ConsoleColor.Black;
-                        Thread.Sleep(100);
-                        Console.Clear();
-                        Console.BackgroundColor = ConsoleColor.Red;
-                        Thread.Sleep(100);
-                        Console.Clear();
-                        Console.BackgroundColor = ConsoleColor.Black;
-                        Thread.Sleep(100);
-                        Console.Clear();
-
-
+                        Hit.FlashScreen();
+                        
                         if (InitialisationOfTheGame.livesCount == 0) // game over 
                         {
                             Console.SetCursorPosition(14, 8);

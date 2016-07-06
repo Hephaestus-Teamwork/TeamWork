@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enumeration\EnumerationOfCharacters.cs" />
+    <Compile Include="InfoAndInitialisation\Hit.cs" />
     <Compile Include="InfoAndInitialisation\Info.cs" />
     <Compile Include="InfoAndInitialisation\InitialisationOfTheGame.cs" />
     <Compile Include="LettersAndPlayerClasses\Player.cs" />
