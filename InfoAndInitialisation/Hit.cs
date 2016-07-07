@@ -37,7 +37,7 @@ namespace TeamWork.InfoAndInitialisation
 
         public static bool Questions()
         {
-            int ntrue = 0;//number of true answer
+            int vidpov = 0;
 
             Console.Clear();
             try
@@ -51,8 +51,8 @@ namespace TeamWork.InfoAndInitialisation
                 string line;
                 int kst_varantiv = 0;
                 int choice = 0;
-                double vidpov = 0;
                 double kst_pitan = 0;
+                int ntrue = 0;//number of true answer
                 for (int i = 1; i < count;)
                 {
                     line = sr.ReadLine();
@@ -98,7 +98,7 @@ namespace TeamWork.InfoAndInitialisation
                 Console.WriteLine("Error!");
             }
 
-            if (ntrue > 1)
+            if (vidpov > 1)
             {
                 Console.WriteLine("You pass !");
                 Console.ReadKey();
