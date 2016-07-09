@@ -10,13 +10,9 @@ namespace TeamWork
     public class Player
     {
         private static Player instance = null;
-        //private string body;
-        // private int x; // position of '('
-        StructureForPlayer player = new StructureForPlayer("(0)", InitialisationOfTheGame.playGroundWidth / 2 - 1);
+        StructureForPlayer player = new StructureForPlayer("\\" + ((char)2).ToString() + "/", InitialisationOfTheGame.playGroundWidth / 2 - 1);
         private Player()
         {
-            //body = "\\" + ((char)2).ToString() + "/";
-            //x = InitialisationOfTheGame.playGroundWidth / 2 - 1;
             Print();
         }
         public static Player GetInstance()
