@@ -18,6 +18,7 @@ namespace TeamWork
             x = InitialisationOfTheGame.playGroundWidth / 2 - 1;
             Print();
         }
+
         public static Player GetInstance()
         {
             if (instance == null)
@@ -26,6 +27,7 @@ namespace TeamWork
             }
             return instance;
         }
+
         public void MoveLeft()
         {
             if (x > 0)
@@ -33,6 +35,7 @@ namespace TeamWork
                 x--;
             }
         }
+
         public void MoveRight()
         {
             if (x < InitialisationOfTheGame.playGroundWidth - 2)
@@ -40,12 +43,14 @@ namespace TeamWork
                 x++;
             }
         }
+
         public void Print(bool hit = false)
         {
             Console.SetCursorPosition(x, Console.WindowHeight - 1);
             Console.ForegroundColor = hit ? ConsoleColor.Red : ConsoleColor.Yellow;
             Console.Write(hit ? "XXX" : body);
         }
+
         public bool Overlap(Letters r)
         {
             if (Console.WindowHeight - 1 == r.Y)
