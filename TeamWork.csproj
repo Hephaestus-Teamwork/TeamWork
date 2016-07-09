@@ -45,6 +45,11 @@
     <Compile Include="InfoAndInitialisation\Hit.cs" />
     <Compile Include="InfoAndInitialisation\Info.cs" />
     <Compile Include="InfoAndInitialisation\InitialisationOfTheGame.cs" />
+    <Compile Include="Interfaces\ILettersMethods.cs" />
+    <Compile Include="Interfaces\ILettersProperties.cs" />
+    <Compile Include="Interfaces\IOverLap.cs" />
+    <Compile Include="Interfaces\IPlayer.cs" />
+    <Compile Include="Interfaces\IPrint.cs" />
     <Compile Include="LettersAndPlayerClasses\Player.cs" />
     <Compile Include="LettersAndPlayerClasses\Letters.cs" />
     <Compile Include="StartTheGame.cs" />
