@@ -14,25 +14,16 @@ namespace TeamWork.InfoAndInitialisation
         public static void FlashScreen()
         {
             Console.Beep();
-            Console.Clear();
-            Console.BackgroundColor = ConsoleColor.Red;
-            Thread.Sleep(100);
-            Console.Clear();
-            Console.BackgroundColor = ConsoleColor.Black;
-            Thread.Sleep(100);
-            Console.Clear();
-            Console.BackgroundColor = ConsoleColor.Red;
-            Thread.Sleep(100);
-            Console.Clear();
-            Console.BackgroundColor = ConsoleColor.Black;
-            Thread.Sleep(100);
-            Console.Clear();
-            Console.BackgroundColor = ConsoleColor.Red;
-            Thread.Sleep(100);
-            Console.Clear();
-            Console.BackgroundColor = ConsoleColor.Black;
-            Thread.Sleep(100);
-            Console.Clear();
+            for (int i = 0; i < 3; i++)
+            {
+                Console.Clear();
+                Console.BackgroundColor = ConsoleColor.Red;
+                Thread.Sleep(100);
+                Console.Clear();
+                Console.BackgroundColor = ConsoleColor.Black;
+                Thread.Sleep(100);
+                Console.Clear();
+            }
         }
 
         public static bool Questions()

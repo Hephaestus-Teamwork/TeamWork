@@ -50,13 +50,13 @@ namespace TeamWork
                     }
                     if (player.Overlap(letter)) // if hit
                     {
+                        Hit.FlashScreen();
                         hit = true;
 
                         if (!Hit.Questions())
                         {
                             InitialisationOfTheGame.livesCount--;
-                            Hit.FlashScreen();
-
+                          
                             if (InitialisationOfTheGame.livesCount == 0) // game over 
                             {
                                 Console.SetCursorPosition(14, 8);
