@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TeamWork.Interfaces;
 using TeamWork.Structure;
 
 namespace TeamWork
 {
-    public class Player
+    public class Player : IPlayer, IPrint, IOverLap
     {
         private static Player instance = null;
         StructureForPlayer player = new StructureForPlayer("\\" + ((char)2).ToString() + "/", InitialisationOfTheGame.playGroundWidth / 2 - 1);

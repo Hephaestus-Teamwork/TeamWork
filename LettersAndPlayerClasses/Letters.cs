@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TeamWork.Interfaces;
 
 namespace TeamWork
 {
-    public class Letters
+    public class Letters : ILettersProperties, ILettersMethods
     {
         private int x;
         private int y;
@@ -38,7 +39,7 @@ namespace TeamWork
             set { this.randomEnumeration = value; }
         }
 
-        private ConsoleColor GetRandomConsoleColor()
+        public ConsoleColor GetRandomConsoleColor()
         {
             int r = rand.Next(16);
             switch (r)
