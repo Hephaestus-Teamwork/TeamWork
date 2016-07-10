@@ -1,0 +1,5 @@
+Light year is a unit of
+1.	time
+2.	distance
+3.	light
+4.	intensity of light
