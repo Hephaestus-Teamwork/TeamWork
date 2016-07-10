@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TeamWork.ExceptionClass;
 using TeamWork.Interfaces;
 using TeamWork.Structure;
 
@@ -19,10 +20,9 @@ namespace TeamWork
 
         public static Player GetInstance()
         {
-            if (instance == null)
-            {
-                instance = new Player();
-            }
+
+            instance = new Player();
+            Validator.CheckIfNull(instance, "You must create instance for player!");
             return instance;
         }
 

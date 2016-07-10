@@ -4,7 +4,7 @@ using TeamWork.InfoAndInitialisation;
 
 namespace TeamWork
 {
-    public class Game
+    public class StartTheGame
     {
         static Random rand = new Random();
         static List<Letters> letters;
