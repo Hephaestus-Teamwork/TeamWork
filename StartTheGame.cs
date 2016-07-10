@@ -53,7 +53,7 @@ namespace TeamWork
                         Hit.FlashScreen();
                         hit = true;
 
-                        if (!Hit.Questions())
+                        if (!Hit.Questions(letter))
                         {
                             InitialisationOfTheGame.livesCount--;
                           
