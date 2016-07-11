@@ -47,6 +47,7 @@
     <Compile Include="InfoAndInitialisation\Hit.cs" />
     <Compile Include="InfoAndInitialisation\Info.cs" />
     <Compile Include="InfoAndInitialisation\InitialisationOfTheGame.cs" />
+    <Compile Include="InfoAndInitialisation\MainLogicOfTheGame.cs" />
     <Compile Include="InfoAndInitialisation\MenuForTheGame.cs" />
     <Compile Include="Interfaces\ILettersMethods.cs" />
     <Compile Include="Interfaces\ILettersProperties.cs" />
