@@ -11,9 +11,13 @@ namespace TeamWork.InfoAndInitialisation
     {
         public static string PressingKey()
         {
+            Console.SetCursorPosition(12, 10);
             Console.WriteLine(MenuConstants.chooseOption);
+            Console.SetCursorPosition(12, 11);
             Console.WriteLine(MenuConstants.newGame);
+            Console.SetCursorPosition(12, 12);
             Console.WriteLine(MenuConstants.highscore);
+            Console.SetCursorPosition(12, 13);
             Console.WriteLine(MenuConstants.exitTheGame);
 
             var pressedKey = Console.ReadKey();
