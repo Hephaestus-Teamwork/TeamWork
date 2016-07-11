@@ -39,7 +39,7 @@ namespace TeamWork.InfoAndInitialisation
                     }
                     if (pressedKey.Key == ConsoleKey.Escape) // Esc
                     {
-                        Environment.Exit(0); // leave game
+                        return; // leave game
                     }
                 }
                 removeObsoletes = new List<Letters>(); // letters, which are to leave the screen
