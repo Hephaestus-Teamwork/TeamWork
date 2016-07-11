@@ -10,6 +10,8 @@ namespace TeamWork.InfoAndInitialisation
 {
     public abstract class Hit
     {
+        public static string hitLetter;
+
         public static void FlashScreen()
         {
             Console.Beep();
@@ -48,6 +50,7 @@ namespace TeamWork.InfoAndInitialisation
             catch (Exception)
             {
                 Console.WriteLine("Error!");
+                hitLetter = letter.RandomEnumeration.ToString();
             }
 
             if (isAnswerCorrect)
@@ -59,6 +62,7 @@ namespace TeamWork.InfoAndInitialisation
             else
             {
                 Console.WriteLine("You failed !");
+                GetQuestion.ChooseQuestionByLetter(hitLetter);
                 Console.ReadKey();
                 return false;
             }
