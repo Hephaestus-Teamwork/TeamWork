@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants\MenuConstants.cs" />
     <Compile Include="Enumeration\EnumerationOfCharacters.cs" />
     <Compile Include="ExceptionClass\Validator.cs" />
     <Compile Include="InfoAndInitialisation\Hit.cs" />
