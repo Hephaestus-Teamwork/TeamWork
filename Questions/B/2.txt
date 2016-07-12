@@ -1,0 +1,5 @@
+Which of the following serves as an actuating signal, or as part of an actuating signal, in a negative feedback system?
+1. Action potentials in diaphragm muscle fibers.
+2. Action potentials in sympathetic neurons that release acetylcholine (ACh) near the SA node of the heart.
+3. Blood plasma levels of oxytocin.
+4. 2 and 3.
