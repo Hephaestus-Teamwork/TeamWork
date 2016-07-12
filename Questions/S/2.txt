@@ -1,0 +1,4 @@
+How long are professional Golf Tour players allotted per shot?
+1	25 seconds
+2	45 seconds
+3	1 minute

@@ -1,0 +1,4 @@
+Track and field star Carl Lewis won how many gold medals at the 1984 Olympic games?
+1	Four
+2	Three
+3	Two
