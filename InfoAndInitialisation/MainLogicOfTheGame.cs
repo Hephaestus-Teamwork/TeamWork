@@ -61,6 +61,7 @@ namespace TeamWork.InfoAndInitialisation
 
                             if (InitialisationOfTheGame.livesCount == 0) // game over 
                             {
+                                Console.Clear();
                                 Console.SetCursorPosition(14, 8);
                                 Console.ForegroundColor = ConsoleColor.Red;
                                 Console.WriteLine("GAME OVER!!!");

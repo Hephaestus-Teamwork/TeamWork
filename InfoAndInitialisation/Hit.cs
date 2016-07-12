@@ -54,14 +54,18 @@ namespace TeamWork.InfoAndInitialisation
 
             if (int.Parse(pressedKey) == number)
             {
-                Console.WriteLine("You pass !");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("              You pass !");
                 Console.ReadKey();
                 return true;
             }
             else
             {
-                Console.WriteLine("You failed !");
-                Console.WriteLine("Correct answer is " + number + " !");
+                Console.WriteLine();
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("               You failed !");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("            Correct answer is " + number + " !");
                 GetQuestion.ChooseQuestionByLetter(hitLetter);
                 Console.ReadKey();
                 return false;
