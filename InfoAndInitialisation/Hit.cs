@@ -37,7 +37,7 @@ namespace TeamWork.InfoAndInitialisation
             Console.Clear();
 
             //Penev directory
-            // string s = @"D:\Study\_TELERIK\TeamWork\TeamWork-master\TeamWork-master\TeamWork\Questions\" + letter.RandomEnumeration.ToString().ToUpper() + "\\" + number + ".txt";
+             string s = @"D:\Study\_TELERIK\TeamWork\TeamWork-master\TeamWork-master\TeamWork\Questions\" + letter.RandomEnumeration.ToString().ToUpper() + "\\" + number + ".txt";
 
 
             //Enikov directory
@@ -63,6 +63,7 @@ namespace TeamWork.InfoAndInitialisation
 
             if (int.Parse(pressedKey) == number)
             {
+                Console.WriteLine();
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("              You pass !");
                 Console.ReadKey();
