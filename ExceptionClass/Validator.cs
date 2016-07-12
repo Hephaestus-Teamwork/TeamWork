@@ -15,5 +15,17 @@ namespace TeamWork.ExceptionClass
                 throw new NullReferenceException(message);
             }
         }
+
+        public static bool CheckIfCorrectAnswerFormat(string aswer)
+        {
+            if (int.Parse(aswer) == 1 || int.Parse(aswer) == 2 || int.Parse(aswer) == 3)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

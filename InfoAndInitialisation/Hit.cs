@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using TeamWork.ExceptionClass;
 
 namespace TeamWork.InfoAndInitialisation
 {
@@ -31,6 +32,7 @@ namespace TeamWork.InfoAndInitialisation
         {
             Random rand = new Random();
             int number = rand.Next(1, 4);
+            string pressedKey = string.Empty();
 
             Console.Clear();
 
@@ -43,8 +45,12 @@ namespace TeamWork.InfoAndInitialisation
                 Console.WriteLine(line);
             }
 
-            Console.Write("Enter your answer: ");
-            string pressedKey = Console.ReadLine();
+            do
+            {
+                Console.Write("Enter your answer: ");
+                pressedKey = Console.ReadLine();
+            } while (Validator.CheckIfCorrectAnswerFormat(pressedKey));
+
 
             if (int.Parse(pressedKey) == number)
             {
