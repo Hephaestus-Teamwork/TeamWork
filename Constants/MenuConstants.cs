@@ -10,7 +10,7 @@ namespace TeamWork.Constants
     {
         public const string chooseOption = "Please choose an option:";
         public const string newGame = "1. Enter to start new game";
-        public const string highscore = "2. H to view the Highscores";
+        public const string highscore = "2. H to view the Highscore";
         public const string exitTheGame = "3. Esc to exit the game";
         public const string createInstance = "You must create instance for player!";
     }
