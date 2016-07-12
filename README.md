@@ -1,10 +1,10 @@
 # Team Hephaestus
 
-## School Hits
+## School Strikes Back
 
 ### Team Members
-* J.Penev (Йордан Пенев) - https://telerikacademy.com/Users/J.Penev
 * Enikov (Тодор Еников) - https://telerikacademy.com/Users/Enikov
+* J.Penev (Йордан Пенев) - https://telerikacademy.com/Users/J.Penev
 * telerik2014 (Димитър Стоянов) - https://telerikacademy.com/Users/telerik2014
 * diana_monday (Татяна Митева) - https://telerikacademy.com/Users/diana_monday
 
@@ -20,3 +20,6 @@ from the letters. If some letter hits him he must answer on random question from
  
 * Tehnologies used - C# ,using OOP principals
 
+## GitHub repository:
+
+https://github.com/Hephaestus-Teamwork/TeamWork
