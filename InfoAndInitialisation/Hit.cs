@@ -30,11 +30,11 @@ namespace TeamWork.InfoAndInitialisation
         public static bool Questions(Letters letter)
         {
             Random rand = new Random();
-            int number = rand.Next(0, 5);
+            int number = rand.Next(1, 4);
 
             Console.Clear();
 
-            string s = @"D:\Study\_TELERIK\TeamWork\TeamWork-master\TeamWork-master\TeamWork\Questions\Algebra\1.txt"; // + letter + randomNumber;
+            string s = @"D:\Study\_TELERIK\TeamWork\TeamWork-master\TeamWork-master\TeamWork\Questions\" + letter.RandomEnumeration.ToString().ToUpper() + "\\" + number + ".txt";
             StreamReader sr = new StreamReader(@s, Encoding.Default);
             var text = File.ReadAllLines(@s);
 
@@ -43,12 +43,8 @@ namespace TeamWork.InfoAndInitialisation
                 Console.WriteLine(line);
             }
 
+            Console.Write("Enter your answer: ");
             string pressedKey = Console.ReadLine();
-
-
-            //Print hole file on the screeen
-            //  TODO add letter in main program constructor
-
 
             if (int.Parse(pressedKey) == number)
             {
