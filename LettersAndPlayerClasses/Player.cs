@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TeamWork.Constants;
 using TeamWork.ExceptionClass;
 using TeamWork.Interfaces;
 using TeamWork.Structure;
@@ -22,7 +23,7 @@ namespace TeamWork
         {
 
             instance = new Player();
-            Validator.CheckIfNull(instance, "You must create instance for player!");
+            Validator.CheckIfNull(instance, MenuConstants.createInstance);
             return instance;
         }
 

@@ -41,11 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants\MenuConstants.cs" />
     <Compile Include="Enumeration\EnumerationOfCharacters.cs" />
     <Compile Include="ExceptionClass\Validator.cs" />
+    <Compile Include="InfoAndInitialisation\GetQuestion.cs" />
     <Compile Include="InfoAndInitialisation\Hit.cs" />
     <Compile Include="InfoAndInitialisation\Info.cs" />
     <Compile Include="InfoAndInitialisation\InitialisationOfTheGame.cs" />
+    <Compile Include="InfoAndInitialisation\MainLogicOfTheGame.cs" />
+    <Compile Include="InfoAndInitialisation\MenuForTheGame.cs" />
     <Compile Include="Interfaces\ILettersMethods.cs" />
     <Compile Include="Interfaces\ILettersProperties.cs" />
     <Compile Include="Interfaces\IOverLap.cs" />
