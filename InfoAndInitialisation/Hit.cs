@@ -32,7 +32,7 @@ namespace TeamWork.InfoAndInitialisation
         {
             Random rand = new Random();
             int number = rand.Next(1, 4);
-            string pressedKey = string.Empty();
+            string pressedKey;
 
             Console.Clear();
 
