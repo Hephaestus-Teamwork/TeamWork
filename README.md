@@ -18,6 +18,11 @@
  
 * Tehnologies used - C# ,using OOP principals
 
+### Images from the game:
+![](/images/main.png)
+![](/images/GameStarted.png)
+![](/images/AnsweringQuestion.png)
+![](/images/AnsweringQuestions2.png)
 ## GitHub repository:
 
 https://github.com/Hephaestus-Teamwork/TeamWork
