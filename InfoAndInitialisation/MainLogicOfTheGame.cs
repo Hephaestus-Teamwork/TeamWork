@@ -72,6 +72,7 @@ namespace TeamWork.InfoAndInitialisation
 
                                 Console.ForegroundColor = ConsoleColor.White;
                                 Console.SetCursorPosition(0, Console.WindowHeight - 1);
+                                StartTheGame.Main();
                                 Environment.Exit(0);
                             }
                         }

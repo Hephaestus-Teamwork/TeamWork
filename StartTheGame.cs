@@ -6,7 +6,7 @@ namespace TeamWork
 {
     public class StartTheGame
     {
-        static void Main()
+        public static void Main()
         {
             string pressedInitialKey = MenuForTheGame.PressingKey();
             if (pressedInitialKey == "Start")
@@ -15,7 +15,7 @@ namespace TeamWork
             }
             else if (pressedInitialKey == "High")
             {
-
+                HighScore.HighestScore(InitialisationOfTheGame.scores);
             }
             else if (pressedInitialKey == "Exit")
             {
