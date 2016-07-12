@@ -61,6 +61,7 @@ namespace TeamWork.InfoAndInitialisation
             else
             {
                 Console.WriteLine("You failed !");
+                Console.WriteLine("Correct answer is " + number + " !");
                 GetQuestion.ChooseQuestionByLetter(hitLetter);
                 Console.ReadKey();
                 return false;
