@@ -36,7 +36,13 @@ namespace TeamWork.InfoAndInitialisation
 
             Console.Clear();
 
-            string s = @"C:\Users\Asus K53SM\Desktop\TeamWork-master(1)\TeamWork\Questions\" + letter.RandomEnumeration.ToString().ToUpper() + "\\" + number + ".txt";
+            //Penev directory
+            // string s = @"D:\Study\_TELERIK\TeamWork\TeamWork-master\TeamWork-master\TeamWork\Questions\" + letter.RandomEnumeration.ToString().ToUpper() + "\\" + number + ".txt";
+
+
+            //Enikov directory
+            //string s = @"C:\Users\Asus K53SM\Desktop\TeamWork-master(1)\TeamWork\Questions\" + letter.RandomEnumeration.ToString().ToUpper() + "\\" + number + ".txt";
+
             StreamReader sr = new StreamReader(@s, Encoding.Default);
             var text = File.ReadAllLines(@s);
 
