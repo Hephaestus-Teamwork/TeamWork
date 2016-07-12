@@ -36,7 +36,7 @@ namespace TeamWork.InfoAndInitialisation
 
             Console.Clear();
 
-            string s = @"D:\Study\_TELERIK\TeamWork\TeamWork-master\TeamWork-master\TeamWork\Questions\" + letter.RandomEnumeration.ToString().ToUpper() + "\\" + number + ".txt";
+            string s = @"C:\Users\Asus K53SM\Desktop\TeamWork-master(1)\TeamWork\Questions\" + letter.RandomEnumeration.ToString().ToUpper() + "\\" + number + ".txt";
             StreamReader sr = new StreamReader(@s, Encoding.Default);
             var text = File.ReadAllLines(@s);
 
@@ -56,6 +56,7 @@ namespace TeamWork.InfoAndInitialisation
             {
                 Console.WriteLine("You pass !");
                 Console.ReadKey();
+                InitialisationOfTheGame.livesCount++;
                 return true;
             }
             else
@@ -64,6 +65,7 @@ namespace TeamWork.InfoAndInitialisation
                 Console.WriteLine("Correct answer is " + number + " !");
                 GetQuestion.ChooseQuestionByLetter(hitLetter);
                 Console.ReadKey();
+                InitialisationOfTheGame.livesCount--;
                 return false;
             }
         }
