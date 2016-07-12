@@ -32,7 +32,7 @@ namespace TeamWork.InfoAndInitialisation
         {
             Random rand = new Random();
             int number = rand.Next(1, 4);
-            string pressedKey = string.Empty();
+            string pressedKey;
 
             Console.Clear();
 
@@ -49,7 +49,7 @@ namespace TeamWork.InfoAndInitialisation
             {
                 Console.Write("Enter your answer: ");
                 pressedKey = Console.ReadLine();
-            } while (Validator.CheckIfCorrectAnswerFormat(pressedKey));
+            } while (!Validator.CheckIfCorrectAnswerFormat(pressedKey));
 
 
             if (int.Parse(pressedKey) == number)
