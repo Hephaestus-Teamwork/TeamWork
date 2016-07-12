@@ -43,6 +43,9 @@ namespace TeamWork.InfoAndInitialisation
             //Enikov directory
             //string s = @"C:\Users\Asus K53SM\Desktop\TeamWork-master(1)\TeamWork\Questions\" + letter.RandomEnumeration.ToString().ToUpper() + "\\" + number + ".txt";
 
+            // Mitko directory
+            //string s = @"C:\Users\Admin\Desktop\Team-Work\TeamWork\Questions\" + letter.RandomEnumeration.ToString().ToUpper() + "\\" + number + ".txt";
+
             StreamReader sr = new StreamReader(@s, Encoding.Default);
             var text = File.ReadAllLines(@s);
 
