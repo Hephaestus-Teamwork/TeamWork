@@ -18,4 +18,5 @@ from the letters. If some letter hits him he must answer on random question from
 
  ####-Letters - they represents the school subjects
  
-* - Tehnologies used - C# ,using OOP principals
+* Tehnologies used - C# ,using OOP principals
+
