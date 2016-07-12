@@ -57,9 +57,7 @@ namespace TeamWork.InfoAndInitialisation
 
                         if (!Hit.Questions(letter))
                         {
-                            InitialisationOfTheGame.livesCount--;
-
-                            if (InitialisationOfTheGame.livesCount == 0) // game over 
+                            if (InitialisationOfTheGame.livesCount <= 0) // game over 
                             {
                                 Console.Clear();
                                 Console.SetCursorPosition(14, 8);

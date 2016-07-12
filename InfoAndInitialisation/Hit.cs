@@ -37,11 +37,11 @@ namespace TeamWork.InfoAndInitialisation
             Console.Clear();
 
             //Penev directory
-             string s = @"D:\Study\_TELERIK\TeamWork\TeamWork-master\TeamWork-master\TeamWork\Questions\" + letter.RandomEnumeration.ToString().ToUpper() + "\\" + number + ".txt";
+            //string s = @"D:\Study\_TELERIK\TeamWork\TeamWork-master\TeamWork-master\TeamWork\Questions\" + letter.RandomEnumeration.ToString().ToUpper() + "\\" + number + ".txt";
 
 
             //Enikov directory
-            //string s = @"C:\Users\Asus K53SM\Desktop\TeamWork-master(1)\TeamWork\Questions\" + letter.RandomEnumeration.ToString().ToUpper() + "\\" + number + ".txt";
+            string s = @"C:\Users\Asus K53SM\Desktop\TeamWork-master(1)\TeamWork\Questions\" + letter.RandomEnumeration.ToString().ToUpper() + "\\" + number + ".txt";
 
             // Mitko directory
             //string s = @"C:\Users\Admin\Desktop\Team-Work\TeamWork\Questions\" + letter.RandomEnumeration.ToString().ToUpper() + "\\" + number + ".txt";
@@ -79,7 +79,7 @@ namespace TeamWork.InfoAndInitialisation
                 Console.WriteLine("            Correct answer is " + number + " !");
                 GetQuestion.ChooseQuestionByLetter(hitLetter);
                 Console.ReadKey();
-                InitialisationOfTheGame.livesCount--;
+                InitialisationOfTheGame.livesCount -= 2;
                 return false;
             }
         }
