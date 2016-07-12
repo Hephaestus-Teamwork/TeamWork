@@ -17,7 +17,7 @@ namespace TeamWork
         {
             Console.BackgroundColor = ConsoleColor.Black;
             Console.CursorVisible = false;
-            Console.Title = "Falling Rocks";
+            Console.Title = "School Strikes Back !";
             Console.BufferHeight = Console.WindowHeight;
             Console.BufferWidth = Console.WindowWidth = 50;
             scores = 0;        
