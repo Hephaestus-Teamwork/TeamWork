@@ -22,7 +22,7 @@ namespace TeamWork.ExceptionClass
             {
                 return false;
             }
-            if (int.Parse(aswer) == 1 || int.Parse(aswer) == 2 || int.Parse(aswer) == 3)
+            if (int.Parse(aswer) == 1 || int.Parse(aswer) == 2 || int.Parse(aswer) == 3 || int.Parse(aswer) == 4)
             {
                 return true;
             }
