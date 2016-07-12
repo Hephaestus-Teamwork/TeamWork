@@ -18,6 +18,10 @@ namespace TeamWork.ExceptionClass
 
         public static bool CheckIfCorrectAnswerFormat(string aswer)
         {
+            if (string.IsNullOrEmpty(aswer))
+            {
+                return false;
+            }
             if (int.Parse(aswer) == 1 || int.Parse(aswer) == 2 || int.Parse(aswer) == 3)
             {
                 return true;
